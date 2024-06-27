@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script:wght@400;600&family=Kalam:wght@700&family=Kanit&family=Kaushan+Script&family=Merriweather&family=Montserrat:wght@400;500&family=Poor+Story&family=Poppins:wght@400;700&family=Roboto&family=Sacramento&family=Sigmar&family=Ubuntu&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-poppins;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3 {
+        @apply font-bold text-gray-800 font-poppins
+    }
+
+    .container {
+        @apply px-6 py-12 mx-auto max-w-7xl lg:px-8 lg:mt-32;
+    }
+
+    .gradient-hover-outer {
+        @apply p-[1px] hover:bg-gradient-to-br bg-slate-200 rounded-2xl hover:from-red-200 hover:via-purple-200 to hover:bg-yellow-200
+    }
+
+    .gradient-hover-inner {
+        @apply hover:bg-gradient-to-br hover:from-red-50 hover:via-purple-50 to hover:bg-yellow-50 bg-slate-50
+    }
+
+
+}
+
+/* 
+body{
+    font-family: "Poppins", sans-serif;
+} */
